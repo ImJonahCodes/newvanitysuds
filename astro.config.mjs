@@ -119,7 +119,7 @@ export default defineConfig({
     gzip: false,
     brotli: true
   })],
-  output: "static",
+  output: "hybrid",
   experimental: {
     clientPrerender: true,
     directRenderScript: true
