@@ -14,10 +14,12 @@ import heroImage from "@/images/logos/logo-2.png";
 import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
 import pricing from "@/data_files/pricing.json";
-import featureImage from "@/images/features-image.avif";
+import featureImage from "@/images/featured.jpeg";
 import construction from "@/images/construction-image.avif";
 import tools from "@/images/automated-tools.avif";
 import dashboard from "@/images/dashboard-image.avif";
+import dad from "@/images/cars/dad.png";
+import mustang from "@/images/cars/mustang.png";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -35,9 +37,9 @@ const avatarSrcs: Array<string> = [
   /> -->
 
   <HeroSection
-    title=`Book Mobile Detailing with <span
-        class="text-primary dark:text-primary">Vanity Suds</span>`
-    subTitle="Top-quality detailing services and expert ceramic coating services for your vehicle."
+    title=`Mobile Detailing in <span
+    class="text-primary dark:text-primary">Pittsburgh</span>`
+    subTitle="Top-quality detailing services and expert ceramic coating services for your vehicle - wherever, whenever!"
     primaryBtn="Our Services"
     primaryBtnURL="/products"
     secondaryBtn="Book Today"
@@ -46,50 +48,45 @@ const avatarSrcs: Array<string> = [
     avatars={avatarSrcs}
     rating=`<span class="font-bold">5</span> / 5`
     starCount={5}
-    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+    reviews=`View Reviews`
     src={heroImage}
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
-  <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-  />
-
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Top-Tier Mobile Detailing"
+    subTitle="At Vanity Suds, we offer high quality detailing services around the Pittsburgh Area. From cutting-edge tools/chemicals to expert services, we're dedicated to making your vehicle look new again while giving great customer service!"
     src={featureImage}
     alt="ScrewFast products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`We offer many services to perfectly suit your expectations and cars needs.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Interior Services",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: tools,
+          "Our interior services will have your cars inside looking brand new! We offer vacuuming, extractions, steaming, pet hair removal, stain removal and more!",
+        svg: "vacuum",
+        src: dad,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Exterior Services",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
+          "Our exterior services will have your cars exterior showroom ready! Our exterior services include 2 bucket hand wash, iron decon, claybar, paint corrections, ceramic coatings and more!",
+        svg: "soap",
+        src: mustang,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Coatings & Paint Corrections",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
+          "Restore your vehicles paint with a paint correction and ceramic coating! This service will remove scratches and bring the shine back to your paint while also protecting it and adding enhanced water repelling capabilities!",
+        svg: "sparkle",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
       },
