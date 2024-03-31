@@ -7,7 +7,11 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1C64F2',
+      },
+    },
   },
   plugins: [
     require("tailwindcss/nesting"),
