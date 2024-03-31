@@ -1,6 +1,6 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_CpN3xS7l.mjs';
-import { g as getPathByLocale, s as shouldAppendForwardSlash, n as normalizeTheLocale, c as computeCurrentLocale, a as computePreferredLocale, b as computePreferredLocaleList } from './chunks/prerender_-0ZsO13W.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_-2yZ_nlo.mjs';
+import { g as getPathByLocale, s as shouldAppendForwardSlash, n as normalizeTheLocale, c as computeCurrentLocale, a as computePreferredLocale, b as computePreferredLocaleList } from './chunks/prerender_CM8UNDjR.mjs';
 import { A as AstroError, R as ResponseSentError, x as MiddlewareNoDataOrNextCalled, y as MiddlewareNotAResponse, z as ROUTE_TYPE_HEADER, B as REROUTE_DIRECTIVE_HEADER, G as GetStaticPathsRequired, C as InvalidGetStaticPathsReturn, D as InvalidGetStaticPathsEntry, H as GetStaticPathsExpectedParams, J as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, K as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, O as PrerenderDynamicEndpointPathCollide, Q as ReservedSlotName, S as renderSlotToString, T as renderJSX, V as chunkToString, W as LocalsNotAnObject, X as clientLocalsSymbol, Y as clientAddressSymbol$1, Z as ClientAddressNotAvailable, _ as StaticClientAddressNotAvailable, $ as ASTRO_VERSION, a0 as responseSentSymbol$1, a1 as AstroResponseHeadersReassigned, a2 as renderPage, a3 as renderEndpoint, a4 as REROUTABLE_STATUS_CODES } from './chunks/astro_CTyT_tO9.mjs';
 import { serialize, parse } from 'cookie';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, g as removeTrailingForwardSlash, h as collapseDuplicateSlashes } from './chunks/astro/assets-service_BHgIUuHT.mjs';
@@ -1830,25 +1830,26 @@ const createExports = (manifest, { middlewareSecret }) => {
 const _page0 = () => import('./chunks/styles_P0EeONYh.mjs');
 const _page1 = () => import('./chunks/scripts_CF4VFUXN.mjs');
 const _page2 = () => import('./chunks/generic_i5c51NJY.mjs');
-const _page3 = () => import('./chunks/404_CAqxGRXf.mjs');
-const _page4 = () => import('./chunks/index_Ckkhybo0.mjs');
-const _page5 = () => import('./chunks/_.._CemSfcak.mjs');
-const _page6 = () => import('./chunks/contact_JrOEKOvJ.mjs');
-const _page7 = () => import('./chunks/favicon_CuktbH2z.mjs');
-const _page8 = () => import('./chunks/404_DsBECEpc.mjs');
-const _page9 = () => import('./chunks/index_Cu4UXJJ9.mjs');
-const _page10 = () => import('./chunks/contact_BJLJW73k.mjs');
-const _page11 = () => import('./chunks/index_t-MoXpjy.mjs');
-const _page12 = () => import('./chunks/services_BsnFR6Zu.mjs');
-const _page13 = () => import('./chunks/index_xsrh-SAC.mjs');
-const _page14 = () => import('./chunks/_.._oOWwa7eZ.mjs');
-const _page15 = () => import('./chunks/manifest_DTKci4UV.mjs');
-const _page16 = () => import('./chunks/index_BJD7NS_2.mjs');
-const _page17 = () => import('./chunks/_.._B76uz581.mjs');
-const _page18 = () => import('./chunks/robots_CGh0HXSM.mjs');
-const _page19 = () => import('./chunks/services_BvYeQx0x.mjs');
-const _page20 = () => import('./chunks/index_CFFiNdoS.mjs');
-const _page21 = () => import('./chunks/index_BgeHKNq_.mjs');
+const _page3 = () => import('./chunks/404_CX4lXdyr.mjs');
+const _page4 = () => import('./chunks/index_D3AcCY1_.mjs');
+const _page5 = () => import('./chunks/_.._BGeY3BDX.mjs');
+const _page6 = () => import('./chunks/book_CuGi428o.mjs');
+const _page7 = () => import('./chunks/contact_BUZAnTzB.mjs');
+const _page8 = () => import('./chunks/favicon_BXvtXjMF.mjs');
+const _page9 = () => import('./chunks/404_CbQw6d28.mjs');
+const _page10 = () => import('./chunks/index_C9Hj4BeF.mjs');
+const _page11 = () => import('./chunks/contact_C32cqEvC.mjs');
+const _page12 = () => import('./chunks/index_BLhH95Rm.mjs');
+const _page13 = () => import('./chunks/services_DNfDOmBm.mjs');
+const _page14 = () => import('./chunks/index_DV5UYv28.mjs');
+const _page15 = () => import('./chunks/_.._DW-a4e_6.mjs');
+const _page16 = () => import('./chunks/manifest_CfmkjiMF.mjs');
+const _page17 = () => import('./chunks/index_Cu4a3nDe.mjs');
+const _page18 = () => import('./chunks/_.._C5Oajz7T.mjs');
+const _page19 = () => import('./chunks/robots_DPgT01fR.mjs');
+const _page20 = () => import('./chunks/services_C0aNnTfh.mjs');
+const _page21 = () => import('./chunks/index_DtUyTqpp.mjs');
+const _page22 = () => import('./chunks/index_DeAFOtox.mjs');
 const pageMap = new Map([
     ["node_modules/astro-expressive-code/routes/styles.ts", _page0],
     ["node_modules/astro-expressive-code/routes/scripts.ts", _page1],
@@ -1856,22 +1857,23 @@ const pageMap = new Map([
     ["src/pages/404.astro", _page3],
     ["src/pages/blog/index.astro", _page4],
     ["src/pages/blog/[...slug].astro", _page5],
-    ["src/pages/contact.astro", _page6],
-    ["src/pages/favicon.ico.ts", _page7],
-    ["src/pages/fr/404.astro", _page8],
-    ["src/pages/fr/blog/index.astro", _page9],
-    ["src/pages/fr/contact.astro", _page10],
-    ["src/pages/fr/products/index.astro", _page11],
-    ["src/pages/fr/services.astro", _page12],
-    ["src/pages/fr/index.astro", _page13],
-    ["src/pages/insights/[...slug].astro", _page14],
-    ["src/pages/manifest.json.ts", _page15],
-    ["src/pages/products/index.astro", _page16],
-    ["src/pages/products/[...slug].astro", _page17],
-    ["src/pages/robots.txt.ts", _page18],
-    ["src/pages/services.astro", _page19],
-    ["src/pages/index.astro", _page20],
-    ["node_modules/@astrojs/starlight/index.astro", _page21]
+    ["src/pages/book.astro", _page6],
+    ["src/pages/contact.astro", _page7],
+    ["src/pages/favicon.ico.ts", _page8],
+    ["src/pages/fr/404.astro", _page9],
+    ["src/pages/fr/blog/index.astro", _page10],
+    ["src/pages/fr/contact.astro", _page11],
+    ["src/pages/fr/products/index.astro", _page12],
+    ["src/pages/fr/services.astro", _page13],
+    ["src/pages/fr/index.astro", _page14],
+    ["src/pages/insights/[...slug].astro", _page15],
+    ["src/pages/manifest.json.ts", _page16],
+    ["src/pages/products/index.astro", _page17],
+    ["src/pages/products/[...slug].astro", _page18],
+    ["src/pages/robots.txt.ts", _page19],
+    ["src/pages/services.astro", _page20],
+    ["src/pages/index.astro", _page21],
+    ["node_modules/@astrojs/starlight/index.astro", _page22]
 ]);
 
 const _manifest = Object.assign(manifest, {
@@ -1880,7 +1882,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "f83c0edc-48da-4bd8-a153-4a7cb0a8918d"
+    "middlewareSecret": "7636bace-5626-4ae3-a5c6-7a5572c6d27b"
 };
 const _exports = createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;

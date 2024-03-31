@@ -20,6 +20,7 @@ import tools from "@/images/automated-tools.avif";
 import dashboard from "@/images/dashboard-image.avif";
 import dad from "@/images/cars/dad.png";
 import mustang from "@/images/cars/mustang.png";
+import mine from "@/images/cars/mine.png";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -40,10 +41,10 @@ const avatarSrcs: Array<string> = [
     title=`Mobile Detailing in <span
     class="text-primary dark:text-primary">Pittsburgh</span>`
     subTitle="Top-quality detailing services and expert ceramic coating services for your vehicle - wherever, whenever!"
-    primaryBtn="Our Services"
-    primaryBtnURL="/products"
-    secondaryBtn="Book Today"
-    secondaryBtnURL="/contact"
+    primaryBtn="Book Appointment"
+    primaryBtnURL="/book"
+    secondaryBtn="Our Instagram"
+    secondaryBtnURL="https://instagram.com/vanitysuds"
     withReview={true}
     avatars={avatarSrcs}
     rating=`<span class="font-bold">5</span> / 5`
@@ -87,56 +88,38 @@ const avatarSrcs: Array<string> = [
         content:
           "Restore your vehicles paint with a paint correction and ceramic coating! This service will remove scratches and bring the shine back to your paint while also protecting it and adding enhanced water repelling capabilities!",
         svg: "sparkle",
-        src: construction,
+        src: mine,
         alt: "Gray metal building frame near tower crane during daytime",
       },
     ]}
   />
 
   <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
+    title="What Are Customers Say"
+    subTitle="Our Main Priority Is Customer Satisfaction, So Heres What Our Customers Say About Us!"
     ;
     testimonials={[
       {
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
+          "Jakobi showed up and was very friendly. I got the premium exterior, and basic interior package and he did a great job giving the cars paint a good cleaning which it needed. He really took his time and made sure it was done right car looks great and smells amazing inside",
+        author: "Joshua Arbogast",
+        role: "Vanity Suds Customer",
+        
       },
       {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
-      },
-      {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
-      },
-      {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+        content:
+          `Highly recommend! I googled "mobile detailers" and booked an appointment with the first company I saw with online booking.  They cancelled on me last minute, but thankfully Vanity Suds was able to fit my son’s car in the next day. Jonah & Jakobi did a fantastic job- super friendly and extremely thorough.`,
+        author: "Tracey Mozeyko",
+        role: "Vanity Suds Customer",
+        
       },
     ]}
   />
 
-  <PricingSection pricing={pricing} />
-
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
+    title="Let's Work Together"
+    subTitle="Vanity Suds is open Monday-Saturday, so visit our booking page to book today!"
     url="https://github.com/mearashadowfax/ScrewFast"
   />
 </MainLayout>

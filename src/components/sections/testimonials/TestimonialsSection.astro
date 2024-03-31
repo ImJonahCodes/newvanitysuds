@@ -21,7 +21,6 @@ type Testimonial = {
   content: string;
   author: string;
   role: string;
-  avatarSrc: string;
 };
 
 // TypeScript type for stats.
@@ -36,7 +35,7 @@ type StatProps = {
 >
   <!-- Container for the testimonials -->
   <div
-    class="lg:grid lg:grid-cols-12 lg:items-center lg:justify-between lg:gap-16"
+    class="lg:grid lg:grid-cols-2 lg:items-center lg:justify-between lg:gap-16"
   >
     <div class="lg:col-span-5 lg:col-start-1">
       <!-- Title and Subtitle -->
@@ -56,25 +55,9 @@ type StatProps = {
       <!-- Generate a blockquote for each testimonial in the testimonials array by mapping over the array. -->
       { testimonials &&
         testimonials.map((testimonial) => (
-        <TestimonialItem content={testimonial.content} author={testimonial.author} role={testimonial.role} avatarSrc={testimonial.avatarSrc} />
+        <TestimonialItem content={testimonial.content} author={testimonial.author} role={testimonial.role}  />
         ))
       }
     </div>
-{ statistics &&
-    <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
-      <div class="space-y-6 sm:space-y-8">
-        <ul
-          class="grid grid-cols-2 divide-x-2 divide-y-2 divide-neutral-300 overflow-hidden dark:divide-neutral-700"
-        >
-          <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
-          {
-            statistics.map((stat, index) => (
-            <StatsGrid count={stat.count} description={stat.description} index={index}/>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-  }
   </div>
 </section>
