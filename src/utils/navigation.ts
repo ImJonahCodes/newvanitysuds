@@ -1,9 +1,8 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "Book", url: "/book" },
   { name: "Blog", url: "/" },
-  { name: "Contact", url: "/" },
+  { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [

@@ -11,9 +11,10 @@ import Icon from "../ui/icons/Icon.astro";
 // Define the variables that will be used in this component
 const title: string = "Contact us";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
+  "Have questions or want to discuss a booking/service? Reach out and let's craft the perfect solution for your vehicle!";
 const formTitle: string = "Fill in the form below";
 const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+
 ---
 
 <!-- Contact Us -->
@@ -39,29 +40,42 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
         </h2>
         <!-- Form for user input with various input fields.-->
         <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form>
+        <form id="contactForm" action="https://submit-form.com/3jnshyywd" method="POST">
           <div class="grid gap-4">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <TextInput
-                id="hs-firstname-contacts"
+                id="firstName"
                 label="First Name"
-                name="hs-firstname-contacts"
+                name="firstName"
               />
               <TextInput
-                id="hs-lastname-contacts"
+                id="lastName"
                 label="Last Name"
-                name="hs-firstname-contacts"
+                name="lastName"
               />
             </div>
-            <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
+            <EmailContactInput id="email" />
+            <PhoneInput id="phoneNumber" />
             <TextAreaInput
-              id="hs-about-contacts"
+              id="details"
               label="Details"
-              name="hs-about-contacts"
+              name="details"
             />
           </div>
 
+          <input
+              type="hidden"
+              name="_redirect"
+              value="https://vanitysuds.com/contact"
+            />
+
+            <div id="popup" class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 hidden">
+              <div class="bg-white rounded-lg p-8">
+                  <p id="popupMessage" class="text-lg text-center mb-4"></p>
+                  <button id="closePopup" class="bg-blue-500 text-white px-4 py-2 rounded-md">Close</button>
+              </div>
+          </div>
+          
           <div class="mt-4 grid">
             <AuthBtn title="Send Message" />
           </div>
@@ -97,22 +111,30 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
+          heading="Visit our Instagram"
+          content="Our Instagram and Facebook"
           isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
-          ><Icon name="mapPin" />
+          addressContent="@vanitysuds"
+          ><Icon name="instagram" />
         </ContactIconBlock>
 
         <ContactIconBlock
           heading="Contact us by email"
           content="Prefer the written word? Drop us an email at"
           isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
+          linkTitle="contact@vanitysuds.com"
           linkURL="#"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
       </div>
+    </div>
+  </div>
+
+  <!-- Popup container -->
+  <div id="popup" class="fixed top-0 left-0 w-full h-full bg-gray-700 bg-opacity-50 flex justify-center items-center hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <p id="popupMessage" class="text-lg"></p>
+      <button id="closePopup" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Close</button>
     </div>
   </div>
 </section>
