@@ -3,13 +3,24 @@
 import AvatarBlog from "../avatars/AvatarBlog.astro";
 import { Image } from "astro:assets";
 import { formatDate } from "@/utils/utils";
-import type { CollectionEntry } from "astro:content";
 
-const { blogEntry } = Astro.props;
-
-interface Props {
-  blogEntry: CollectionEntry<"blog">;
+export interface Props {
+  title: string
+  excerpt: string
+  href: string
+  author: string
+  postDate: string
+  postImage: string
+  authorImage: string
+  tags: {
+    title: string
+    metadata: {
+      color?: string
+    }
+  }[]
 }
+
+const { href, title, excerpt, tags, author, postDate, postImage, authorImage } = Astro.props
 ---
 
 <!-- The following anchor tag is the main container for the card.
@@ -18,7 +29,7 @@ interface Props {
      which automatically prefetches the linked page to speed up navigation. -->
 <a
   class="group relative block rounded-xl outline-none ring-zinc-500 transition duration-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-  href={`/blog/${blogEntry.slug}/`}
+  href={`/blog/${href}/`}
   data-astro-prefetch
 >
   <!-- The container for the blog post's cover image. Uses astro:assets' Image for image source -->
@@ -27,25 +38,26 @@ interface Props {
   >
     <Image
       class="absolute start-0 top-0 size-full object-cover transition duration-500 group-hover:scale-110"
-      src={blogEntry.data.cardImage}
-      alt={blogEntry.data.cardImageAlt}
+      src={postImage}
+      alt="test"
       draggable={"false"}
       loading={"eager"}
       format={"avif"}
+      inferSize
     />
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
   </div>
   <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->
   <div class="absolute inset-x-0 top-0 z-10">
     <div class="flex h-full flex-col p-4 sm:p-6">
       <div class="flex items-center">
-        <AvatarBlog blogEntry={blogEntry} />
 
         <div class="ms-2.5 sm:ms-4">
           <h4 class="font-bold text-neutral-50">
-            {blogEntry.data.author}
+            {author}
           </h4>
-          <p class="text-xs text-neutral-50/[.8]">
-            {formatDate(blogEntry.data.pubDate)}
+          <p class="text-md text-neutral-50">
+            {formatDate(postDate)}
           </p>
         </div>
       </div>
@@ -57,10 +69,10 @@ interface Props {
       <h3
         class="text-balance text-lg font-bold text-neutral-50 group-hover:text-neutral-50/[.8] sm:text-3xl"
       >
-        {blogEntry.data.title}
+        {title}
       </h3>
       <p class="mt-2 text-pretty text-neutral-50/[.8]">
-        {blogEntry.data.description}
+        {excerpt}
       </p>
     </div>
   </div>

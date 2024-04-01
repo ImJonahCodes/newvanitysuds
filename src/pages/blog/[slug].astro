@@ -1,0 +1,105 @@
+---
+// Import necessary components and utilities
+import MainLayout from "@/layouts/MainLayout.astro";
+import AvatarBlogLarge from "@/components/ui/avatars/AvatarBlogLarge.astro";
+import { Image } from "astro:assets";
+import { capitalize, formatDate } from "@/utils/utils";
+import { SITE } from "@/data_files/constants";
+import { getAllPosts } from '../../lib/cosmic';
+import { marked } from "marked";
+
+export async function getStaticPaths() {
+  const data = (await getAllPosts()) || []
+
+  return data.map((post) => {
+    return {
+      params: { slug: post.slug },
+      props: { post }
+    }
+  })
+}
+
+const { post } = Astro.props
+
+---
+
+<MainLayout
+  title={post.title}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://vanitysuds.com/blog",
+    "url": "https://vanitysuds.com/blog",
+    "name": "Blog | Vanity Suds",
+    "description": "${post.metadata.excerpt}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://vanitysuds.com",
+      "name": "Vanity Suds",
+      "description": "Vanity Suds offers top-tier mobile detailing services and expert ceramic coating services for your vehicle. Start exploring and contact our team for superior quality and reliability."
+    },
+    "inLanguage": "en-US"
+  }}
+>
+
+  <section class="mx-auto max-w-3xl px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-10">
+    <div class="max-w-2xl">
+      <div class="mb-6 flex items-center justify-between">
+        <div class="flex w-full gap-x-5 sm:items-center sm:gap-x-3">
+          <div class="grow">
+            <div class="flex items-center justify-between gap-x-2">
+              <div>
+                <div
+                  class="hs-tooltip inline-block [--placement:bottom] [--trigger:hover]"
+                >
+                  <!--Post metadata and author info-->
+                  <span
+                    class="font-bold text-neutral-700 dark:text-neutral-300"
+                  >
+                  {post.metadata.author.title}
+                  </span>
+                </div>
+                <ul class="text-xs text-neutral-500">
+                  <li
+                    class="relative inline-block pe-6 before:absolute before:end-2 before:top-1/2 before:size-1 before:-translate-y-1/2 before:rounded-full before:bg-neutral-300 last:pe-0 last-of-type:before:hidden dark:text-neutral-400 dark:before:bg-neutral-600"
+                  >
+                    {formatDate(post.metadata.published_date)}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Blog post title-->
+      <h2
+        class="mb-3 text-2xl font-bold text-neutral-800 dark:text-primary md:text-3xl"
+      >
+        {post.title}
+      </h2>
+      <!--Blog post contents-->
+      <div class="mb-5 space-y-5 md:mb-8 md:space-y-8">
+        <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
+          {post.metadata.excerpt}
+        </p>
+        <Image
+          class="w-full rounded-xl object-cover"
+          src={post.metadata.image.imgix_url}
+          alt={post.metadata.image.imgix_url}
+          draggable={"false"}
+          format={"avif"}
+          inferSize
+        />
+
+        <div class="text-pretty mx-auto prose prose-xl dark:prose-invert prose-h3:pt-6 prose-h3:pb-4 prose-h3:text-primary">
+          <div set:html={marked.parse(`${post.metadata.content}`)} />
+        </div>
+
+      </div>
+      <div
+        class="mx-auto grid max-w-screen-lg gap-y-5 sm:flex sm:items-center sm:justify-between sm:gap-y-0"
+      >
+      </div>
+    </div>
+  </section>
+</MainLayout>
