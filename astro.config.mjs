@@ -127,7 +127,7 @@ export default defineConfig({
     include: {
       mdi: ["*"] // (Default) Loads entire Material Design Icon set
     }
-  }), alpinejs(), purgecss(), min()],
+  }), alpinejs()],
   output: "hybrid",
   experimental: {
     clientPrerender: true,
