@@ -1,4 +1,4 @@
-<div x-data="{ isOpen: localStorage.getItem('cardDismissed') !== 'true' }" x-init="() => { if (!isOpen) { document.getElementById('cookies-with-stacked-buttons').style.display = 'none'; } window.addEventListener('beforeunload', function() { localStorage.removeItem('cardDismissed'); }); }" class="fixed bottom-0 end-0 z-[60] sm:max-w-sm w-full mx-auto p-6" x-show="isOpen">
+<div x-data="{ isOpen: localStorage.getItem('cardDismissed') !== 'true' }" x-init="() => { if (!isOpen) { document.getElementById('cookies-with-stacked-buttons').style.display = 'none'; } }" class="fixed bottom-0 end-0 z-[60] sm:max-w-sm w-full mx-auto p-6" x-show="isOpen">
     <!-- Card -->
     <div id="cookies-with-stacked-buttons" class="p-4 bg-white/[.6] backdrop-blur-lg rounded-xl shadow-2xl dark:bg-slate-900/[.6] dark:shadow-black/[.7]">
         <div class="flex justify-between items-center gap-x-5 sm:gap-x-10">
