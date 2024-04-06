@@ -5,8 +5,9 @@ import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 import vercel from "@astrojs/vercel/serverless";
-
 import icon from "astro-icon";
+
+import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -121,9 +122,9 @@ export default defineConfig({
     brotli: true
   }), icon({
     include: {
-      mdi: ["*"], // (Default) Loads entire Material Design Icon set
-    },
-  })],
+      mdi: ["*"] // (Default) Loads entire Material Design Icon set
+    }
+  }), alpinejs()],
   output: "hybrid",
   experimental: {
     clientPrerender: true,
