@@ -4,6 +4,7 @@ import Meta from "@/components/Meta.astro";
 import Navbar from "@/components/sections/Navbar.astro";
 import FooterSection from "@/components/sections/FooterSection.astro";
 import { SITE } from "@/data_files/constants";
+import Banner from "@/components/banners/deal.astro";
 
 // Setting expected props
 const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
@@ -41,6 +42,7 @@ We set the language of the page to English and add classes for scrollbar and scr
     </script>
 
     <script type="module" src="../../src/utils/contactForm.js"></script>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 
     <script is:inline src="/scripts/vendor/lenis/lenis.js"></script>
     <script is:inline>
@@ -63,6 +65,7 @@ We set the language of the page to English and add classes for scrollbar and scr
     The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
     -->
     <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+      <Banner />
       <Navbar />
       <main>
         <slot />
