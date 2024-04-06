@@ -6,8 +6,11 @@ import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
-
 import alpinejs from "@astrojs/alpinejs";
+import purgecss from "astro-purgecss";
+import min from "astro-min";
+
+import playformCompress from "@playform/compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -124,7 +127,7 @@ export default defineConfig({
     include: {
       mdi: ["*"] // (Default) Loads entire Material Design Icon set
     }
-  }), alpinejs()],
+  }), alpinejs(), purgecss(), min()],
   output: "hybrid",
   experimental: {
     clientPrerender: true,

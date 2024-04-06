@@ -1,6 +1,6 @@
-import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_BX24T956.mjs';
+import { r as resolveSrc, i as isRemoteImage, a as isESMImportedImage, b as isLocalService, D as DEFAULT_HASH_PROPS, c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_D4zFhSll.mjs';
 import mime from 'mime/lite.js';
-import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes } from '../astro_ypf8xBlY.mjs';
+import { A as AstroError, c as InvalidImageService, d as ExpectedImageOptions, E as ExpectedImage, F as FailedToFetchRemoteImageDimensions, e as createAstro, f as createComponent, g as ImageMissingAlt, r as renderTemplate, m as maybeRenderHead, h as addAttribute, s as spreadAttributes } from '../astro_BXTYqXvs.mjs';
 import 'clsx';
 
 const decoder = new TextDecoder();
@@ -527,7 +527,6 @@ const units = {
   px: 1
 };
 const unitsReg = new RegExp(
-  // eslint-disable-next-line regexp/prefer-d
   `^([0-9.]+(?:e\\d+)?)(${Object.keys(units).join("|")})?$`
 );
 function parseLength(len) {
@@ -819,7 +818,7 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      '../astro/assets-service_BX24T956.mjs'
+      '../astro/assets-service_D4zFhSll.mjs'
     ).then(n => n.k).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
@@ -998,10 +997,13 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   if (fallbackImage.srcSet.values.length > 0) {
     imgAdditionalAttributes.srcset = fallbackImage.srcSet.attribute;
   }
-  return renderTemplate`${maybeRenderHead()}<picture${spreadAttributes(pictureAttributes)}> ${Object.entries(optimizedImages).map(([_, image]) => {
+  return renderTemplate`${maybeRenderHead()}<picture${spreadAttributes(pictureAttributes)}>
+	${Object.entries(optimizedImages).map(([_, image]) => {
     const srcsetAttribute = props.densities || !props.densities && !props.widths ? `${image.src}${image.srcSet.values.length > 0 ? ", " + image.srcSet.attribute : ""}` : image.srcSet.attribute;
     return renderTemplate`<source${addAttribute(srcsetAttribute, "srcset")}${addAttribute("image/" + image.options.format, "type")}${spreadAttributes(sourceAdditionalAttributes)}>`;
-  })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
+  })}
+	<img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}>
+</picture>`;
 }, "/workspaces/newvanitysuds/node_modules/astro/components/Picture.astro", void 0);
 
 const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":["images.unsplash.com"],"remotePatterns":[]};

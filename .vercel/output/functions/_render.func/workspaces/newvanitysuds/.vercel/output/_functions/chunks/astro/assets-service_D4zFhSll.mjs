@@ -1,4 +1,4 @@
-import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_ypf8xBlY.mjs';
+import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_BXTYqXvs.mjs';
 
 function appendForwardSlash(path) {
   return path.endsWith("/") ? path : path + "/";
@@ -333,6 +333,7 @@ async function loadSharp() {
   } catch (e) {
     throw new AstroError(MissingSharp);
   }
+  sharpImport.cache(false);
   return sharpImport;
 }
 const sharpService = {
