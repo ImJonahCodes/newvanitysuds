@@ -1,4 +1,4 @@
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig, squooshImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
@@ -13,7 +13,8 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://vanitysuds.com",
   image: {
-    domains: ["images.unsplash.com"]
+    domains: ["images.unsplash.com"],
+    service: squooshImageService(),
   },
   i18n: {
     defaultLocale: "en",
