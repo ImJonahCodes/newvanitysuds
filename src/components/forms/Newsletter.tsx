@@ -33,7 +33,7 @@ const Newsletter = () => {
           });
       
           if (!res.ok) {
-            throw new Error("Something went wrong");
+            throw new Error("Something went wrong.");
           }
       
           const resData = await res.json();
