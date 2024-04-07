@@ -1,9 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import starlight from "@astrojs/starlight";
-import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
 import react from "@astrojs/react";
