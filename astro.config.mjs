@@ -2,14 +2,10 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
-import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
 import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
-import purgecss from "astro-purgecss";
-import min from "astro-min";
-import playformCompress from "@playform/compress";
 
 import react from "@astrojs/react";
 
