@@ -9,8 +9,9 @@ import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
 import purgecss from "astro-purgecss";
 import min from "astro-min";
-
 import playformCompress from "@playform/compress";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -127,7 +128,7 @@ export default defineConfig({
     include: {
       mdi: ["*"] // (Default) Loads entire Material Design Icon set
     }
-  }), alpinejs()],
+  }), alpinejs(), react()],
   output: "hybrid",
   experimental: {
     clientPrerender: true,
