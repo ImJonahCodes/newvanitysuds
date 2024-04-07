@@ -8,6 +8,8 @@ import { SITE } from "@/data_files/constants";
 import { getAllPosts } from '../../lib/cosmic';
 import { marked } from "marked";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const data = (await getAllPosts()) || []
 

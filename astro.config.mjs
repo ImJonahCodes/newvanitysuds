@@ -6,11 +6,18 @@ import starlight from "@astrojs/starlight";
 import vercel from "@astrojs/vercel/serverless";
 import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
-
 import react from "@astrojs/react";
+
+import node from "@astrojs/node";
+
+const port = parseInt(process.env.PORT) || 8000
 
 // https://astro.build/config
 export default defineConfig({
+  server: { 
+    port: port, 
+    host: '0.0.0.0', 
+  }, 
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://vanitysuds.com",
   image: {
@@ -122,10 +129,12 @@ export default defineConfig({
       mdi: ["*"] // (Default) Loads entire Material Design Icon set
     }
   }), alpinejs(), react()],
-  output: "hybrid",
+  output: "server",
   experimental: {
     clientPrerender: true,
     directRenderScript: true
   },
-  adapter: vercel()
+  adapter: node({
+    mode: "standalone"
+  })
 });
