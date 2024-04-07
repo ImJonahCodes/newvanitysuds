@@ -713,22 +713,6 @@
     unist-util-visit "^5.0.0"
     vfile "^6.0.0"
 
-"@minify-html/node-linux-x64@0.15.0":
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/@minify-html/node-linux-x64/-/node-linux-x64-0.15.0.tgz"
-  integrity sha512-cO893EV6O9ZHUFX+2Yge546OCo/eCiatjzJDmUmrPP56fQ7pzTRquHs4ko3t8Rg6tMKG7RT49mBuF09JWPnrgg==
-
-"@minify-html/node@^0.15.0":
-  version "0.15.0"
-  resolved "https://registry.npmjs.org/@minify-html/node/-/node-0.15.0.tgz"
-  integrity sha512-ANzt6ZBiqtwrepVXRfa0Qn/woCkINFBjQEKiXyBmg7+51mIFQHVAUbAm6UHRrT0L3xoPG0BX0/XI3NqtjK8Vyg==
-  optionalDependencies:
-    "@minify-html/node-darwin-arm64" "0.15.0"
-    "@minify-html/node-darwin-x64" "0.15.0"
-    "@minify-html/node-linux-arm64" "0.15.0"
-    "@minify-html/node-linux-x64" "0.15.0"
-    "@minify-html/node-win32-x64" "0.15.0"
-
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -1395,20 +1379,12 @@ astro-icon@^1.1.0:
     "@iconify/types" "^2.0.0"
     "@iconify/utils" "^2.1.5"
 
-astro-min@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.npmjs.org/astro-min/-/astro-min-1.2.6.tgz"
-  integrity sha512-wvQM//HdXtwFB1aiwJ/ULviShpARhlwsQSYlSMcPu2DDZyuWIq+Ii9/bZM464zbGBKHlekKkazgBXo7Af7vw2Q==
-  dependencies:
-    "@minify-html/node" "^0.15.0"
-    svgo "^3.2.0"
-
 astro-purgecss@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/astro-purgecss/-/astro-purgecss-4.1.0.tgz"
   integrity sha512-CVxAXVuKYJZS2lbFEJJ9lKCnUx0FSd9+5muZTLdhXBWHiNpx1PKmR9WNJykP4ArCdpDPjkWSudyYUqMDAAA43w==
 
-"astro@^3.0.0 || ^4.0.0", astro@^4.0.0, "astro@^4.0.0 || ^3.0.0 || ^2.0.0 || ^1.0.0", "astro@^4.0.0-beta || ^3.3.0", astro@^4.2.0, astro@^4.2.7, astro@^4.5.9, astro@4.5.16:
+"astro@^3.0.0 || ^4.0.0", astro@^4.0.0, "astro@^4.0.0-beta || ^3.3.0", astro@^4.2.0, astro@^4.2.7, astro@^4.5.9, astro@4.5.16:
   version "4.5.16"
   resolved "https://registry.npmjs.org/astro/-/astro-4.5.16.tgz"
   integrity sha512-1nOVsMq2OJiXnG6gO0Y77vTAboGN9nLQSy/8SGazq4h6x+alzbsMbQbArBgvaLzOSUXD0m91XLs3D8bOSuavrQ==
@@ -5661,19 +5637,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svgo@^3.2.0, svgo@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/svgo/-/svgo-3.2.0.tgz"
-  integrity sha512-4PP6CMW/V7l/GmKRKzsLR8xxjdHTV4IMvhTnpuHwwBazSIlw5W/5SmPjN8Dwyt7lKbSJrRDgp4t9ph0HgChFBQ==
-  dependencies:
-    "@trysound/sax" "0.2.0"
-    commander "^7.2.0"
-    css-select "^5.1.0"
-    css-tree "^2.3.1"
-    css-what "^6.1.0"
-    csso "^5.0.5"
-    picocolors "^1.0.0"
-
 svgo@3.0.3:
   version "3.0.3"
   resolved "https://registry.npmjs.org/svgo/-/svgo-3.0.3.tgz"
@@ -5684,6 +5647,19 @@ svgo@3.0.3:
     css-select "^5.1.0"
     css-tree "^2.2.1"
     csso "5.0.5"
+    picocolors "^1.0.0"
+
+svgo@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/svgo/-/svgo-3.2.0.tgz"
+  integrity sha512-4PP6CMW/V7l/GmKRKzsLR8xxjdHTV4IMvhTnpuHwwBazSIlw5W/5SmPjN8Dwyt7lKbSJrRDgp4t9ph0HgChFBQ==
+  dependencies:
+    "@trysound/sax" "0.2.0"
+    commander "^7.2.0"
+    css-select "^5.1.0"
+    css-tree "^2.3.1"
+    css-what "^6.1.0"
+    csso "^5.0.5"
     picocolors "^1.0.0"
 
 tailwindcss@^3.0.24, tailwindcss@^3.3.3, tailwindcss@^3.4.1, "tailwindcss@>=3.0.0 || >= 3.0.0-alpha.1", "tailwindcss@>=3.0.0 || insiders":

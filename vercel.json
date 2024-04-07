@@ -2,6 +2,9 @@
     "headers": [
       {
         "source": "/(.*)",
+        "engines": {
+          "node": "18.x"
+        },
         "headers": [
           {
             "key": "Content-Security-Policy",
