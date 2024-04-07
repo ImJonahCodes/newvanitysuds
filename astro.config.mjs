@@ -13,8 +13,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://vanitysuds.com",
   image: {
-    domains: ["images.unsplash.com"],
-    service: passthroughImageService(),
+    domains: ["images.unsplash.com"]
   },
   i18n: {
     defaultLocale: "en",
