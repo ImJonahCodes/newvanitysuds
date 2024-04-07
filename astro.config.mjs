@@ -5,8 +5,6 @@ import starlight from "@astrojs/starlight";
 import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
 import react from "@astrojs/react";
-import vercel from '@astrojs/vercel/serverless';
-import cloudflare from "@astrojs/cloudflare";
 
 import netlify from "@astrojs/netlify";
 
