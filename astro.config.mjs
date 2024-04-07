@@ -121,9 +121,6 @@ export default defineConfig({
         content: "https://screwfast.uk" + "/social.png"
       }
     }]
-  }), compressor({
-    gzip: false,
-    brotli: true
   }), icon({
     include: {
       mdi: ["*"] // (Default) Loads entire Material Design Icon set
