@@ -24,7 +24,7 @@ We set the language of the page to English and add classes for scrollbar and scr
       }
 
       requestAnimationFrame(raf);
-    </script><link rel="stylesheet" href="/_astro/index.Ck4TfpGQ.css">
+    </script><link rel="stylesheet" href="/_astro/index.YVvrZJX5.css">
 <style>.scrollbar-hide:where(.astro-ouamjn2i)::-webkit-scrollbar{display:none}.scrollbar-hide:where(.astro-ouamjn2i){-ms-overflow-style:none;scrollbar-width:none}html.lenis,html.lenis body{height:auto}.lenis:where(.astro-ouamjn2i).lenis-smooth{scroll-behavior:auto!important}.lenis:where(.astro-ouamjn2i).lenis-smooth :where(.astro-ouamjn2i)[data-lenis-prevent]{overscroll-behavior:contain}.lenis:where(.astro-ouamjn2i).lenis-stopped{overflow:hidden}.lenis:where(.astro-ouamjn2i).lenis-scrolling iframe:where(.astro-ouamjn2i){pointer-events:none}
 </style><script type="module" src="/_astro/page.0RUTIEvy.js"></script></head> <body class="dark bg-neutral-200 selection:bg-primary selection:text-neutral-700 dark:bg-neutral-950 astro-ouamjn2i"> <!--
     Setting up the main structure of the page.
@@ -47,6 +47,11 @@ by comparing the current URL with the href of each link.
 We assign an ID matching the URL for easy reference in our script.
 If URL is '/' (home page), assign ID as 'home' 
 --><a id="home" href="/" data-astro-prefetch class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"> Home </a> <script type="module">document.addEventListener("DOMContentLoaded",function(){let e=window.location.pathname;e.split("/");let a;e==="/"?a="home":a=e.replace("/","");let t=document.getElementById(a);t&&(t.classList.remove("text-neutral-600","dark:text-neutral-400","hover:text-neutral-500","dark:hover:text-neutral-500"),t.classList.add("text-[#1C64F2]","dark:text-[#1C64F2]"),t.setAttribute("aria-current","page"))});</script><!--
+Re-usable link component for navigation bar. Highlights the active link
+by comparing the current URL with the href of each link.
+We assign an ID matching the URL for easy reference in our script.
+If URL is '/' (home page), assign ID as 'home' 
+--><a id="services" href="/services" data-astro-prefetch class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"> Services </a> <!--
 Re-usable link component for navigation bar. Highlights the active link
 by comparing the current URL with the href of each link.
 We assign an ID matching the URL for easy reference in our script.
