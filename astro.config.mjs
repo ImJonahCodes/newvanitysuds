@@ -5,8 +5,9 @@ import starlight from "@astrojs/starlight";
 import icon from "astro-icon";
 import alpinejs from "@astrojs/alpinejs";
 import react from "@astrojs/react";
-
 import netlify from "@astrojs/netlify";
+
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -127,5 +128,5 @@ export default defineConfig({
     directRenderScript: true
   },
   output: 'hybrid',
-  adapter: netlify()
+  adapter: vercel()
 });
