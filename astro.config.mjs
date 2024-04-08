@@ -14,7 +14,9 @@ export default defineConfig({
   site: "https://vanitysuds.com",
   image: {
     domains: ["images.unsplash.com"],
-    service: passthroughImageService()
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
   },
   i18n: {
     defaultLocale: "en",
