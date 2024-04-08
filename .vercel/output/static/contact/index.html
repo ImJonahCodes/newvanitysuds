@@ -1,0 +1,172 @@
+<!DOCTYPE html><!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes--><!--
+This is the main structure for the page.
+We set the language of the page to English and add classes for scrollbar and scroll behavior.
+--><html lang="en" class="scrollbar-hide lenis lenis-smooth scroll-pt-16 astro-ouamjn2i"> <head><!-- Adding metadata to the HTML document --><!-- Inject structured data into the page if provided. This data is formatted as JSON-LD, a method recommended by Google for structured data pass:
+     https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data --><script type="application/ld+json">{"@context":"https://vanitysuds.com","@type":"WebPage","@id":"https://vanitysuds.com/contact","url":"https://vanitysuds.com/contact","name":"Contact Us | Vanity Suds","description":"Have questions or want to discuss a booking/service? Reach out and let's craft the perfect solution for your vehicle!","isPartOf":{"@type":"WebSite","url":"https://vanitysuds.com","name":"Vanity Suds Detailing","description":"Vanity Suds offers top-tier mobile detailing services and expert ceramic coating services for your vehicle. Start exploring and contact our team for superior quality and reliability."},"inLanguage":"en-US"}</script><!-- Define the character set, description, author, and viewport settings --><meta charset="utf-8"><meta content="Vanity Suds offers top-tier mobile detailing services and expert ceramic coating services for your vehicle. Start exploring and contact our team for superior quality and reliability." name="description"><meta name="web_author" content="Jonah Hoffman"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="canonical" href="https://vanitysuds.com/contact/"><link rel="alternate" hreflang="en" href="https://vanitysuds.com/contact/" />
+<link rel="alternate" hreflang="fr" href="https://vanitysuds.com/fr/contact/" /><!-- Facebook Meta Tags --><meta property="og:locale" content="en_US"><meta property="og:url" content="https://vanitysuds.com/"><meta property="og:type" content="website"><meta property="og:title" content="Vanity Suds | Mobile Detailing: : Pittsburgh Mobile Detailing"><meta property="og:site_name" content="Vanity Suds | Mobile Detailing"><meta property="og:description" content="Vanity Suds offers top-tier mobile detailing services and expert ceramic coating services for your vehicle. Start exploring and contact our team for superior quality and reliability."><meta property="og:image" content="https://vanitysuds.com/_astro/logo-1.BPyY9PrM_1bxIGN.webp"><meta content="1200" property="og:image:width"><meta content="600" property="og:image:height"><meta content="image/png" property="og:image:type"><!-- Twitter Meta Tags --><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="https://vanitysuds.com/"><meta property="twitter:url" content="https://vanitysuds.com/"><meta name="twitter:title" content="Vanity Suds | Mobile Detailing: : Pittsburgh Mobile Detailing"><meta name="twitter:description" content="Vanity Suds offers top-tier mobile detailing services and expert ceramic coating services for your vehicle. Start exploring and contact our team for superior quality and reliability."><meta name="twitter:image" content="https://vanitysuds.com/_astro/logo-1.BPyY9PrM_1bxIGN.webp"><!-- Links to the webmanifest and sitemap --><link rel="manifest" href="/manifest.json"><!-- https://docs.astro.build/en/guides/integrations-guide/sitemap/ --><link rel="sitemap" href="/sitemap-index.xml"><!-- Links for favicons --><link href="/_astro/logo.CjKOsViQ_1dcrda.svg" rel="icon" sizes="any" type="image/x-icon"><link href="/_astro/logo.CjKOsViQ_1dcrda.svg" rel="icon" type="image/svg+xml" sizes="any"><meta name="mobile-web-app-capable" content="yes"><link href="/_astro/logo-1.BPyY9PrM_1bxIGN.webp" rel="apple-touch-icon"><link href="/_astro/logo-1.BPyY9PrM_1bxIGN.webp" rel="shortcut icon"><!-- Set theme color --><meta name="theme-color" content="#1c64f2"><!-- Define the title of the page --><title>Contact | Vanity Suds | Mobile Detailing</title><script>
+      // Script to handle dark mode. It will check if the theme is stored in localStorage or if dark theme is preferred by system settings
+      if (
+        localStorage.getItem("hs_theme") === "dark" ||
+        (!("hs_theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script><script type="module" src="../../src/utils/contactForm.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script><script src="/scripts/vendor/lenis/lenis.js"></script><script>
+      // Script to handle Lenis library settings for smooth scrolling
+      const lenis = new Lenis({ smooth: true, smoothTouch: false });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script><link rel="stylesheet" href="/_astro/index.Ck4TfpGQ.css">
+<style>.scrollbar-hide:where(.astro-ouamjn2i)::-webkit-scrollbar{display:none}.scrollbar-hide:where(.astro-ouamjn2i){-ms-overflow-style:none;scrollbar-width:none}html.lenis,html.lenis body{height:auto}.lenis:where(.astro-ouamjn2i).lenis-smooth{scroll-behavior:auto!important}.lenis:where(.astro-ouamjn2i).lenis-smooth :where(.astro-ouamjn2i)[data-lenis-prevent]{overscroll-behavior:contain}.lenis:where(.astro-ouamjn2i).lenis-stopped{overflow:hidden}.lenis:where(.astro-ouamjn2i).lenis-scrolling iframe:where(.astro-ouamjn2i){pointer-events:none}
+</style><script type="module" src="/_astro/page.0RUTIEvy.js"></script></head> <body class="dark bg-neutral-200 selection:bg-primary selection:text-neutral-700 dark:bg-neutral-950 astro-ouamjn2i"> <!--
+    Setting up the main structure of the page.
+    The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
+    --> <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 astro-ouamjn2i"> <div x-data="{ isOpen: true }" class="fixed bottom-0 end-0 z-[60] sm:max-w-sm w-full mx-auto p-6" x-show="isOpen"> <!-- Card --> <div class="p-4 bg-white/[.6] backdrop-blur-lg rounded-xl shadow-2xl dark:bg-slate-900/[.6] dark:shadow-black/[.7]"> <div class="flex justify-between items-center gap-x-5 sm:gap-x-10"> <h2 class="font-semibold text-gray-800 dark:text-white">
+SPRING DEAL
+</h2> <button @click="isOpen = false" type="button" class="inline-flex rounded-full p-2 text-gray-500 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600 dark:hover:bg-gray-800 dark:text-gray-300"> <span class="sr-only">Dismiss</span> <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg> </button> </div> <p class="mt-2 text-sm text-gray-800 dark:text-gray-200">
+Get ready to blossom this spring with our unbeatable spring deal - let us revive your vehicle's shine, so you can hit the road in style!
+</p> <div class="mt-5 mb-2 w-full flex gap-x-2 text-center"> <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-primary dark:text-white dark:hover:bg-gray-800">
+Use Code
+<span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-lg text-xs font-medium bg-blue-100 text-primary dark:bg-blue-800/30 dark:text-primary">SPRING</span>
+For 15% Off!
+</button> </div> <div class="grid w-full"> <div class="flex justify-center items-center w-full"> <a type="button" href="/book" class="w-full py-2 px-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+BOOK NOW
+</a> </div> </div> </div> <!-- End Card --> </div> <!-- Main header component --><header class="sticky inset-x-0 top-4 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start"> <!-- Navigation container --> <nav class="relative mx-2 w-full rounded-[36px] border border-yellow-100/40 bg-yellow-50/60 px-4 py-3 backdrop-blur-md dark:border-neutral-700/40 dark:bg-neutral-950/80 dark:backdrop-blur-md md:flex md:items-center md:justify-between md:px-6 md:py-0 lg:px-8 xl:mx-auto" aria-label="Global"> <div class="flex items-center justify-between"> <!-- Brand logo --> <a class="flex-none text-primary rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none" href="/" aria-label="Brand">
+VANITY SUDS
+</a> <!-- Collapse toggle for smaller screens --> <div class="ml-auto mr-5 md:hidden"> <button type="button" class="hs-collapse-toggle flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-neutral-600 transition duration-300 hover:bg-neutral-200 disabled:pointer-events-none disabled:opacity-50 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:outline-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation"> <svg class="h-[1.25rem] w-[1.25rem] flex-shrink-0 hs-collapse-open:hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <line x1="3" x2="21" y1="6" y2="6"></line> <line x1="3" x2="21" y1="12" y2="12"></line> <line x1="3" x2="21" y1="18" y2="18"></line> </svg> <svg class="hidden h-[1.25rem] w-[1.25rem] flex-shrink-0 hs-collapse-open:block" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 6 6 18"></path> <path d="m6 6 12 12"></path> </svg> </button> </div> </div> <!-- Contains navigation links --> <div id="navbar-collapse-with-animation" class="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 md:block"> <!-- Navigation links container --> <div class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"> <!-- Navigation links and Authentication component --> <!--
+Re-usable link component for navigation bar. Highlights the active link
+by comparing the current URL with the href of each link.
+We assign an ID matching the URL for easy reference in our script.
+If URL is '/' (home page), assign ID as 'home' 
+--><a id="home" href="/" data-astro-prefetch class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"> Home </a> <script type="module">document.addEventListener("DOMContentLoaded",function(){let e=window.location.pathname;e.split("/");let a;e==="/"?a="home":a=e.replace("/","");let t=document.getElementById(a);t&&(t.classList.remove("text-neutral-600","dark:text-neutral-400","hover:text-neutral-500","dark:hover:text-neutral-500"),t.classList.add("text-[#1C64F2]","dark:text-[#1C64F2]"),t.setAttribute("aria-current","page"))});</script><!--
+Re-usable link component for navigation bar. Highlights the active link
+by comparing the current URL with the href of each link.
+We assign an ID matching the URL for easy reference in our script.
+If URL is '/' (home page), assign ID as 'home' 
+--><a id="blog" href="/blog" data-astro-prefetch class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"> Blog </a> <!--
+Re-usable link component for navigation bar. Highlights the active link
+by comparing the current URL with the href of each link.
+We assign an ID matching the URL for easy reference in our script.
+If URL is '/' (home page), assign ID as 'home' 
+--><a id="contact" href="/contact" data-astro-prefetch class="rounded-lg text-base font-medium text-neutral-600 outline-none ring-zinc-500 hover:text-neutral-500 focus-visible:ring dark:text-neutral-400 dark:ring-zinc-200 dark:hover:text-neutral-500 dark:focus:outline-none md:py-3 md:text-sm 2xl:text-base"> Contact </a>  <div class="pt-5 pb-5"> <!-- Link styled as a button, with dynamic title, URL, and optional arrow --><a class="group inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 transition duration-300 focus-visible:ring outline-none border border-transparent bg-primary hover:bg-[#1c75f2] active:bg-[#1c75f2] dark:focus:outline-none disabled:pointer-events-none disabled:opacity-50 2xl:text-base dark:ring-zinc-200" href="/book"> Book Appointment <!-- Display the arrow based on the 'noArrow' property --> <svg class="h-4 w-4 flex-shrink-0 transition duration-300 group-hover:translate-x-1" height="24" viewBox="0 0 24 24" width="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6" class=""></path></svg> </a> </div> </div> </div> </nav> </header> <!-- Theme Appearance script to manage light/dark modes --> <script>
+  const HSThemeAppearance = {
+    init() {
+      const defaultTheme = "default";
+      let theme = localStorage.getItem("hs_theme") || defaultTheme;
+
+      if (document.querySelector("html").classList.contains("dark")) return;
+      this.setAppearance(theme);
+    },
+    _resetStylesOnLoad() {
+      const $resetStyles = document.createElement("style");
+      $resetStyles.innerText = `*{transition: unset !important;}`;
+      $resetStyles.setAttribute("data-hs-appearance-onload-styles", "");
+      document.head.appendChild($resetStyles);
+      return $resetStyles;
+    },
+    setAppearance(theme, saveInStore = true, dispatchEvent = true) {
+      const $resetStylesEl = this._resetStylesOnLoad();
+
+      if (saveInStore) {
+        localStorage.setItem("hs_theme", theme);
+      }
+
+      if (theme === "auto") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "default";
+      }
+
+      document.querySelector("html").classList.remove("dark");
+      document.querySelector("html").classList.remove("default");
+      document.querySelector("html").classList.remove("auto");
+
+      document
+        .querySelector("html")
+        .classList.add(this.getOriginalAppearance());
+
+      setTimeout(() => {
+        $resetStylesEl.remove();
+      });
+
+      if (dispatchEvent) {
+        window.dispatchEvent(
+          new CustomEvent("on-hs-appearance-change", { detail: theme }),
+        );
+      }
+    },
+    getAppearance() {
+      let theme = this.getOriginalAppearance();
+      if (theme === "auto") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "default";
+      }
+      return theme;
+    },
+    getOriginalAppearance() {
+      const defaultTheme = "default";
+      return localStorage.getItem("hs_theme") || defaultTheme;
+    },
+  };
+  HSThemeAppearance.init();
+
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", () => {
+      if (HSThemeAppearance.getOriginalAppearance() === "auto") {
+        HSThemeAppearance.setAppearance("auto", false);
+      }
+    });
+
+  window.addEventListener("load", () => {
+    const $clickableThemes = document.querySelectorAll(
+      "[data-hs-theme-click-value]",
+    );
+    const $switchableThemes = document.querySelectorAll(
+      "[data-hs-theme-switch]",
+    );
+
+    $clickableThemes.forEach(($item) => {
+      $item.addEventListener("click", () =>
+        HSThemeAppearance.setAppearance(
+          $item.getAttribute("data-hs-theme-click-value"),
+          true,
+          $item,
+        ),
+      );
+    });
+
+    $switchableThemes.forEach(($item) => {
+      $item.addEventListener("change", (e) => {
+        HSThemeAppearance.setAppearance(e.target.checked ? "dark" : "default");
+      });
+
+      $item.checked = HSThemeAppearance.getAppearance() === "dark";
+    });
+
+    window.addEventListener("on-hs-appearance-change", (e) => {
+      $switchableThemes.forEach(($item) => {
+        $item.checked = e.detail === "dark";
+      });
+    });
+  });
+</script> <!--Import the necessary Collapse and Overlay plugins--> <!--https://preline.co/plugins/html/collapse.html--> <!--https://preline.co/plugins/html/overlay.html--> <script src="/scripts/vendor/preline/collapse/index.js"></script> <script src="/scripts/vendor/preline/overlay/index.js"></script> <main class="astro-ouamjn2i">  <!-- Contact Us --><section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14"> <div class="mx-auto max-w-2xl lg:max-w-5xl"> <div class="text-center"> <h1 class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"> Contact us </h1> <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400"> Have questions or want to discuss a booking/service? Reach out and let&#39;s craft the perfect solution for your vehicle! </p> </div> <div class="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16"> <div class="flex flex-col rounded-xl p-4 sm:p-6 lg:p-8"> <h2 class="mb-8 text-xl font-bold text-neutral-700 dark:text-neutral-300"> Fill in the form below </h2> <!-- Form for user input with various input fields.--> <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)--> <form id="contactForm" action="https://submit-form.com/3jnshyywd" method="POST"> <div class="grid gap-4"> <div class="grid grid-cols-1 gap-4 sm:grid-cols-2"> <div> <label for="firstName" class="sr-only">First Name</label> <input type="text" name="firstName" id="firstName" class="block w-full rounded-lg border border-primary bg-neutral-50 px-4 py-3 text-sm text-neutral-700 placeholder:text-neutral-500 focus:border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-400 disabled:pointer-events-none disabled:opacity-50 dark:border-primary dark:bg-neutral-700/30 dark:text-neutral-300 dark:placeholder:text-neutral-400 dark:focus:ring-1" placeholder="First Name"> </div> <div> <label for="lastName" class="sr-only">Last Name</label> <input type="text" name="lastName" id="lastName" class="block w-full rounded-lg border border-primary bg-neutral-50 px-4 py-3 text-sm text-neutral-700 placeholder:text-neutral-500 focus:border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-400 disabled:pointer-events-none disabled:opacity-50 dark:border-primary dark:bg-neutral-700/30 dark:text-neutral-300 dark:placeholder:text-neutral-400 dark:focus:ring-1" placeholder="Last Name"> </div> </div> <!-- Container for the label and email input field --><div> <!-- Label for the email input field, visually hidden but accessible to screen readers --> <label for="email" class="sr-only">Email</label> <!-- Email input field --> <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-lg border border-primary bg-neutral-50 px-4 py-3 text-sm text-neutral-700 placeholder:text-neutral-500 focus:border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-400 disabled:pointer-events-none disabled:opacity-50 dark:border-primary dark:bg-neutral-700/30 dark:text-neutral-300 dark:placeholder:text-neutral-400 dark:focus:ring-1" placeholder="Email"> </div> <div> <label for="phoneNumber" class="sr-only">Phone Number</label> <input type="tel" name="phoneNumber" id="phoneNumber" class="block w-full rounded-lg border border-primary bg-neutral-50 px-4 py-3 text-sm text-neutral-700 placeholder:text-neutral-500 focus:border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-400 disabled:pointer-events-none disabled:opacity-50 dark:border-primary dark:bg-neutral-700/30 dark:text-neutral-300 dark:placeholder:text-neutral-400 dark:focus:ring-1" placeholder="Phone Number"> </div> <div> <label for="details" class="sr-only">Details</label> <textarea id="details" name="details" rows="4" class="block w-full rounded-lg border border-primary bg-neutral-50 px-4 py-3 text-sm text-neutral-700 placeholder:text-neutral-500 focus:border-neutral-200 focus:outline-none focus:ring focus:ring-neutral-400 disabled:pointer-events-none disabled:opacity-50 dark:border-primary dark:bg-neutral-700/30 dark:text-neutral-300 dark:placeholder:text-neutral-400 dark:focus:ring-1" placeholder="Details"></textarea> </div> </div> <input type="hidden" name="_redirect" value="https://vanitysuds.com/contact"> <div id="popup" class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 hidden"> <div class="bg-white rounded-lg p-8"> <p id="popupMessage" class="text-lg text-center mb-4"></p> <button id="closePopup" class="bg-blue-500 text-white px-4 py-2 rounded-md">Close</button> </div> </div> <div class="mt-4 grid"> <!-- Styled submit button with dynamic title --><button type="submit" class="inline-flex w-full items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-white focus-visible:ring outline-none transition duration-300 border border-transparent bg-primary dark:focus:outline-none hover:bg-primary/50 2xl:text-base disabled:pointer-events-none disabled:opacity-50 ring-zinc-500 dark:ring-zinc-200">Send Message</button> </div> <div class="mt-3 text-center"> <p class="text-sm text-neutral-600 dark:text-neutral-400"> We&#39;ll get back to you in 1-2 business days. </p> </div> </form> </div> <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.--> <div class="divide-y divide-neutral-300 dark:divide-neutral-700"> <!-- Root container, which arranges the heading and content --><div class="flex gap-x-7 py-6"> <!-- Slot to allow for extensibility of the component --> <svg class="mt-1.5 h-6 w-6 flex-shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" class=""></path></svg>  <div class="grow"> <!-- Heading of the section --> <h3 class="font-bold text-neutral-700 dark:text-neutral-300"> Knowledgebase </h3> <!-- Content of the section --> <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Browse through all of our knowledgebase articles.</p> <!-- Conditional rendering of address content if isAddressVisible is true -->  <!-- Conditional rendering of a link if isLinkVisible is true.
+         The link also conditionally includes an arrow SVG if isArrowVisible is true --> <a class="group mt-2 inline-flex items-center gap-x-2 rounded-lg text-sm font-medium text-zinc-600 outline-none ring-zinc-500 transition duration-300 hover:text-zinc-800 focus-visible:ring dark:text-zinc-400 dark:ring-zinc-200 dark:hover:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 " href="#"> Visit guides &amp; tutorials <svg
+class="h-4 w-4 flex-shrink-0 transition ease-in-out group-hover:translate-x-1"
+fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /> </svg> </a> </div> </div> <!-- Root container, which arranges the heading and content --><div class="flex gap-x-7 py-6"> <!-- Slot to allow for extensibility of the component --> <svg class="mt-1.5 h-6 w-6 flex-shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" class=""></path></svg>  <div class="grow"> <!-- Heading of the section --> <h3 class="font-bold text-neutral-700 dark:text-neutral-300"> FAQ </h3> <!-- Content of the section --> <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Explore our FAQ for quick, clear answers to common queries.</p> <!-- Conditional rendering of address content if isAddressVisible is true -->  <!-- Conditional rendering of a link if isLinkVisible is true.
+         The link also conditionally includes an arrow SVG if isArrowVisible is true --> <a class="group mt-2 inline-flex items-center gap-x-2 rounded-lg text-sm font-medium text-zinc-600 outline-none ring-zinc-500 transition duration-300 hover:text-zinc-800 focus-visible:ring dark:text-zinc-400 dark:ring-zinc-200 dark:hover:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 " href="#"> Visit FAQ <svg
+class="h-4 w-4 flex-shrink-0 transition ease-in-out group-hover:translate-x-1"
+fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /> </svg> </a> </div> </div> <!-- Root container, which arranges the heading and content --><div class="flex gap-x-7 py-6"> <!-- Slot to allow for extensibility of the component --> <svg class="mt-1 h-8 w-8 flex-shrink-0 fill-primary" height="48" viewBox="0 0 24 24" width="48"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" class=""></path></svg>  <div class="grow"> <!-- Heading of the section --> <h3 class="font-bold text-neutral-700 dark:text-neutral-300"> Visit our Instagram </h3> <!-- Content of the section --> <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Our Instagram and Facebook</p> <!-- Conditional rendering of address content if isAddressVisible is true --> <p class="mt-1 text-sm italic text-neutral-500">@vanitysuds</p> <!-- Conditional rendering of a link if isLinkVisible is true.
+         The link also conditionally includes an arrow SVG if isArrowVisible is true -->  </div> </div> <!-- Root container, which arranges the heading and content --><div class="flex gap-x-7 py-6"> <!-- Slot to allow for extensibility of the component --> <svg class="mt-1.5 h-6 w-6 flex-shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" class=""></path></svg>  <div class="grow"> <!-- Heading of the section --> <h3 class="font-bold text-neutral-700 dark:text-neutral-300"> Contact us by email </h3> <!-- Content of the section --> <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Prefer the written word? Drop us an email at</p> <!-- Conditional rendering of address content if isAddressVisible is true -->  <!-- Conditional rendering of a link if isLinkVisible is true.
+         The link also conditionally includes an arrow SVG if isArrowVisible is true --> <a class="group mt-2 inline-flex items-center gap-x-2 rounded-lg text-sm font-medium text-zinc-600 outline-none ring-zinc-500 transition duration-300 hover:text-zinc-800 focus-visible:ring dark:text-zinc-400 dark:ring-zinc-200 dark:hover:text-zinc-200 dark:focus:outline-none dark:focus:ring-1 " href="#"> contact@vanitysuds.com  </a> </div> </div> </div> </div> </div> <!-- Popup container --> <div id="popup" class="fixed top-0 left-0 w-full h-full bg-gray-700 bg-opacity-50 flex justify-center items-center hidden"> <div class="bg-white p-6 rounded-lg shadow-lg"> <p id="popupMessage" class="text-lg"></p> <button id="closePopup" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">Close</button> </div> </div> </section>  </main> </div>  </body> </html>
