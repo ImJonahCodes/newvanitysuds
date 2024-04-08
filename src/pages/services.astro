@@ -4,6 +4,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 import ContactSection from "@/components/sections/ContactSection.astro";
 import { SITE } from "@/data_files/constants";
 import ServicesBlock from "@/components/sections/services/services.astro"
+import Hero from "@/components/sections/services/hero.astro"
 
 const pageTitle: string = `Services | ${SITE.title}`;
 ---
@@ -30,6 +31,7 @@ const pageTitle: string = `Services | ${SITE.title}`;
   }}
 >
   
+<Hero />
 <ServicesBlock />
 
 

@@ -5,6 +5,7 @@ import Navbar from "@/components/sections/Navbar.astro";
 import FooterSection from "@/components/sections/FooterSection.astro";
 import { SITE } from "@/data_files/constants";
 import Banner from "@/components/banners/deal.astro";
+import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 
 // Setting expected props
 const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
@@ -104,5 +105,14 @@ We set the language of the page to English and add classes for scrollbar and scr
         pointer-events: none;
       }
     </style>
+    <HeroSectionAlt
+    title="Let's Work Together"
+    subTitle="Vanity Suds is open Monday-Saturday, so visit our booking page to book today!"
+    url="https://github.com/mearashadowfax/ScrewFast"
+    />
+
+    <hr class="border-primary w-3/4 mx-auto my-4">
+
+    <FooterSection />
   </body>
 </html>
