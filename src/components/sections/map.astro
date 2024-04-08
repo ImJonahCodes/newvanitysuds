@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import map from "@/images/map.png";
+---
+
+<!-- Block start -->
+<section class="">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-12 sm:text-center lg:py-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Our Service Area</h2>
+        <p class="font-light text-gray-500 sm:text-lg md:px-20 lg:px-38 xl:px-48 dark:text-gray-400">This is just a outline of the area we provide our services too. We are mobile in Pittsburgh and the Surrounding area. We can provide our services to a location out of the outline below, jsut contact us and we can talk!</p>
+        <div class="flex justify-center items-center">
+        <Image
+            src={map}
+            alt="Map"
+            class="h-1/2 w-1/2 scale-110 object-cover object-center text-center mt-10"
+            draggable={"false"}
+            loading={"eager"}
+            format={"png"}
+	    />
+    </div>
+    </div>
+</section>
+<!-- Block end -->
