@@ -6,6 +6,7 @@ import FooterSection from "@/components/sections/FooterSection.astro";
 import { SITE } from "@/data_files/constants";
 import Banner from "@/components/banners/deal.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
+import "@maptiler/sdk/dist/maptiler-sdk.css";
 
 // Setting expected props
 const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
@@ -41,6 +42,9 @@ We set the language of the page to English and add classes for scrollbar and scr
         document.documentElement.classList.remove("dark");
       }
     </script>
+
+<script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.umd.min.js"></script>
+<link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.css" rel="stylesheet" />
 
     <script type="module" src="../../src/utils/contactForm.js"></script>
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
