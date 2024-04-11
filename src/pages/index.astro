@@ -23,7 +23,8 @@ import mustang from "@/images/cars/mustang.png";
 import mine from "@/images/cars/mine.png";
 import Newsletter from "@/components/forms/Newsletter";
 import CTA from "@/components/cta/services.astro";
-import Map from "@/components/sections/map.astro"
+import Map from "@/components/sections/map.astro";
+import Reviews from "@/components/sections/testimonials/Reviews.astro";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -100,27 +101,7 @@ const avatarSrcs: Array<string> = [
 
   <CTA />
 
-  <TestimonialsSection
-    title="What Our Customers Say"
-    subTitle="Our Main Priority Is Customer Satisfaction, So Heres What Our Customers Say About Us!"
-    ;
-    testimonials={[
-      {
-        content:
-          "Jakobi showed up and was very friendly. I got the premium exterior, and basic interior package and he did a great job giving the cars paint a good cleaning which it needed. He really took his time and made sure it was done right car looks great and smells amazing inside",
-        author: "Joshua Arbogast",
-        role: "Vanity Suds Customer",
-        
-      },
-      {
-        content:
-          `Highly recommend! I googled "mobile detailers" and booked an appointment with the first company I saw with online booking.  They cancelled on me last minute, but thankfully Vanity Suds was able to fit my son’s car in the next day. Jonah & Jakobi did a fantastic job- super friendly and extremely thorough.`,
-        author: "Tracey Mozeyko",
-        role: "Vanity Suds Customer",
-        
-      },
-    ]}
-  />
+  <Reviews id />
 
 
   
