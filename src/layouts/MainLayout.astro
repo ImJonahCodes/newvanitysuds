@@ -24,7 +24,7 @@ interface Props {
 This is the main structure for the page.
 We set the language of the page to English and add classes for scrollbar and scroll behavior.
 -->
-<html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
+<html lang={lang} class="dark scrollbar-hide lenis lenis-smooth scroll-pt-16">
   <head>
     <!-- Adding metadata to the HTML document -->
     <Meta meta={meta} structuredData={structuredData} />
@@ -39,7 +39,7 @@ We set the language of the page to English and add classes for scrollbar and scr
       ) {
         document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("dark");
       }
     </script>
 
