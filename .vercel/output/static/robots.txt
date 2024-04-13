@@ -1,19 +1,4 @@
-User-agent: Googlebot
-Disallow:
-Allow: /
-Crawl-delay: 10
-
-User-agent: Yandex
-Disallow:
-Allow: /
-Crawl-delay: 2
-
-User-agent: archive.org_bot
-Disallow:
-Allow: /
-Crawl-delay: 2
-
 User-agent: *
-Disallow: /
+Allow: /
 
 Sitemap: https://vanitysuds.com/sitemap-index.xml

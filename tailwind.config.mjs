@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 
 export default {
@@ -11,6 +13,9 @@ export default {
       colors: {
         primary: '#1C64F2',
         secondary: '#3a78f2',
+      },
+      fontFamily: {
+        sans: ['Nunito', 'sans-serif'],
       },
     },
   },

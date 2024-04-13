@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import PrimaryCTA from "../../ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "../../ui/buttons/SecondaryCTA.astro";
 import ReviewComponent from "../../ui/blocks/ReviewComponent.astro";
+import HeroText from "@/components/framer/heroText";
 
 // Define props from Astro
 const {
@@ -47,12 +48,7 @@ interface Props {
   <!-- Title and description -->
   <div>
     <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
-    <h1
-      class="block text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
-    >
-      <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
-      <Fragment set:html={title} />
-    </h1>
+    <HeroText client:only />
     {subTitle &&
     <p
       class="mt-3 text-pretty text-lg leading-relaxed text-neutral-700 dark:text-neutral-400 lg:w-4/5"

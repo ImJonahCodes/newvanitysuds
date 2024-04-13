@@ -7,6 +7,7 @@ import { SITE } from "@/data_files/constants";
 import Banner from "@/components/banners/deal.astro";
 import HeroSectionAlt from "@/components/sections/landing/HeroSectionAlt.astro";
 import "@maptiler/sdk/dist/maptiler-sdk.css";
+import '@fontsource-variable/inter';
 
 // Setting expected props
 const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
@@ -28,6 +29,7 @@ We set the language of the page to English and add classes for scrollbar and scr
   <head>
     <!-- Adding metadata to the HTML document -->
     <Meta meta={meta} structuredData={structuredData} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- Define the title of the page -->
     <title>{title}</title>
     <script is:inline>
