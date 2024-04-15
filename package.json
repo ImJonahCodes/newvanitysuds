@@ -30,7 +30,7 @@
     "@playform/compress": "^0.0.3",
     "@types/alpinejs": "^3.13.10",
     "@types/cookie": "^0.6.0",
-    "@types/react": "^18.2.74",
+    "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.24",
     "alpinejs": "^3.13.8",
     "astro": "^4.5.9",
