@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.5.10",
-    "@astrojs/cloudflare": "^10.0.2",
+    "@astrojs/cloudflare": "^10.4.1",
     "@astrojs/netlify": "^5.2.0",
     "@astrojs/node": "^8.2.5",
     "@astrojs/react": "^3.1.1",
